@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us - Hotel Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="maruthi1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha384-GLhlTQ8iUNZdLg+UTFP68F87gPQb8h0pV5B/Q5c8BqqDHt1758ea5I2F6DdPjhT"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="contact1.css">
+</head>
+<body>
+    <header class="header" id="navigation-menu">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"> <img src="logo.png" alt=""> </a>
+
+                <ul class="nav-menu">
+                    <li> <a href="maruthi12.html" class="nav-link">Home</a> </li>
+                    <li> <a href="Untitled-2.html" class="nav-link">About</a> </li>
+                    <li> <a href="rooms.html" class="nav-link">Rooms</a> </li>
+                    <li> <a href="restaurent.html" class="nav-link">Restaurant</a> </li>
+                    <li> <a href="gallary.html" class="nav-link">Gallery</a> </li>
+                  
+                  <li> <a href="contact1.html" class="nav-link">Contact</a> </li>
+                </ul>
+
+                <div class="hambuger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+   <!---- <script>
+        // Your script for handling mobile menu here
+        const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+    </script>-->
+    <script>
+        const hamburger = document.querySelector('.hambuger');
+        const navMenu = document.querySelector('.nav-menu');
+      
+        hamburger.addEventListener("click", toggleMenu);
+      
+        function toggleMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+      
+          // Add or remove the event listener based on the menu state
+          if (navMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+            document.body.addEventListener('click', closeMenuOutside);
+          } else {
+            document.body.style.overflow = ''; // Enable scrolling
+            document.body.removeEventListener('click', closeMenuOutside);
+          }
+        }
+      
+        // Function to close the menu when clicking outside
+        function closeMenuOutside(event) {
+          if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+            document.body.style.overflow = ''; // Enable scrolling
+            document.body.removeEventListener('click', closeMenuOutside);
+          }
+        }
+      
+        const navLink = document.querySelectorAll('.nav-link');
+        navLink.forEach((n) => n.addEventListener("click", closeMenu));
+      
+        function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          document.body.style.overflow = ''; // Enable scrolling
+          document.body.removeEventListener('click', closeMenuOutside);
+        }
+      </script>
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="bi bi-telephone"></i>
+                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-envelope-at"></i>
+                        <span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                    </li>
+                    <li>
+                      <i class="bi bi-wifi-2"></i>
+                        <span>Website:</span> <a href="#">yoursite.com</a>
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-wrap">
+                <form action="#" method="POST">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="lname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="email" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container grid top">
+          <div class="box">
+            <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+            <p>Accepted payment methods</p>
+            <div class="payment grid">
+              <img src="https://img.icons8.com/color/48/000000/visa.png" />
+              <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+              <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+              <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+            </div>
+          </div>
+    
+          <div class="box">
+            <h3>Recent News</h3>
+    
+            <ul>
+              <li>Our Secret Island Boat Tour Is Just for You</li>
+              <li>Chill and Escape in Our Natural Shelters</li>
+              <li>September in Luviana Hotel</li>
+              <li>Live Music Concerts at Luviana</li>
+            </ul>
+          </div>
+    
+          <div class="box">
+            <h3>For Customers</h3>
+            <ul>
+              <li>About Luviana</li>
+              <li>Customer Care & Help 24/7</li>
+              <li>Corporate Accounts</li>
+              <li>Financial Information</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+    
+          <div class="box">
+            <h3>Contact Us</h3>
+    
+            <ul>
+              <li>3015 Grand Ave, Cocount Grove, Merrick Way FL 123456</li>
+              <li><i class="fas fa-envelope"></i>hotels@gmail.com </li>
+              <li><i class="fas fa-phone-alt"></i>123 456 7898 </li>
+              <li><i class="fas fa-phone-alt"></i>+91 98885 25552 </li>
+              <li><i class="fas fa-comments"></i>24/ 7 Customer Services </li>
+              <hr>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

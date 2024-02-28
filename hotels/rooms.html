@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Room Details - Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="maruthi1.css">
+
+  
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-GLhlTQ8iUNZdLg+UTFP68F87gPQb8h0pV5B/Q5c8BqqDHt1758ea5I2F6DdPjhT" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    
+      <div class="container">
+        <nav>
+          <a href="#" class="logo"> <img src="logo.png" alt=""> </a>
+  
+          <ul class="nav-menu">
+            <li> <a href="maruthi12.html" class="nav-link">Home</a> </li>
+            <li> <a href="Untitled-2.html" class="nav-link">About</a> </li>
+            <li> <a href="rooms.html" class="nav-link">Rooms</a> </li>
+            <li> <a href="restaurent.html" class="nav-link">Restaurant</a> </li>
+            <li> <a href="gallary.html" class="nav-link">Gallery</a> </li>
+           
+            <li> <a href="contact1.html" class="nav-link">Contact</a> </li>
+          </ul>
+  
+          <div class="hambuger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+  </header>
+ <!--- <script>
+    // Your script for handling mobile menu here
+    const hambuger = document.querySelector('.hambuger');
+const navMenu = document.querySelector('.nav-menu');
+
+hambuger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hambuger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll('.nav-link');
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hambuger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+</script>-->
+<script>
+  const hamburger = document.querySelector('.hambuger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+    // Add or remove the event listener based on the menu state
+    if (navMenu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+      document.body.addEventListener('click', closeMenuOutside);
+    } else {
+      document.body.style.overflow = ''; // Enable scrolling
+      document.body.removeEventListener('click', closeMenuOutside);
+    }
+  }
+
+  // Function to close the menu when clicking outside
+  function closeMenuOutside(event) {
+    if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+      document.body.style.overflow = ''; // Enable scrolling
+      document.body.removeEventListener('click', closeMenuOutside);
+    }
+  }
+
+  const navLink = document.querySelectorAll('.nav-link');
+  navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    document.body.style.overflow = ''; // Enable scrolling
+    document.body.removeEventListener('click', closeMenuOutside);
+  }
+</script>
+
+  <section class="room-details top">
+    <div class="container">
+      <div class="heading_top flex">
+        <div class="heading">
+          <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+          <h2>Room Details</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        
+        <div class="box">
+          <div class="img">
+            <img src="https://img.freepik.com/free-photo/books-chair-near-bed_23-2147896669.jpg?w=740&t=st=1704279812~exp=1704280412~hmac=738f5f75ed5e699b54343f6e72177cf40437a1648b6c06ebde12b62a12b16bc1" alt="Room 1" style="width: 100%;height: 100vh;">
+          </div>
+          <div class="text">
+            <h3>Deluxe Double Room</h3>
+            <p> <span>$</span>199 <span>/per night</span> </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, odit.</p>
+            <button class="btn1">BOOK NOW</button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="https://img.freepik.com/free-photo/pillow-bed_1203-2819.jpg?size=626&ext=jpg&ga=GA1.1.1328048986.1702273702&semt=ais" alt="Room 2" style="width: 100%;height: 100vh;">
+          </div>
+          <div class="text">
+            <h3>Luxury Suite</h3>
+            <p> <span>$</span>299 <span>/per night</span> </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, odit.</p>
+            <button class="btn1">BOOK NOW</button>
+          </div>
+        </div>
+        <div class="box">
+            <div class="img">
+              <img src="https://img.freepik.com/free-photo/bed-arrangements-still-life_23-2150532971.jpg?size=626&ext=jpg&ga=GA1.1.1328048986.1702273702&semt=ais" alt="Room 3" style="width: 100%;height: 100vh;">
+            </div>
+            <div class="text">
+              <h3>Superior Soble Rooms</h3>
+              <p> <span>$</span>129 <span>/per day</span> </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, odit.</p>
+              <button class="btn1">BOOK NOW</button>
+            </div>
+          </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="wrapper wrapper2 top">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h5>AT THE HEART OF COMMUNICATION</h5>
+          <h2>People Says</h2>
+        </div>
+
+        <div class="para">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+          <div class="box flex">
+            <div class="img">
+              <img src="c.jpg" alt="">
+            </div>
+            <div class="name">
+              <h5>KATE PALMER</h5>
+              <h5>IDAHO</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+   
+    <div class="container grid top">
+        <div class="box">
+          <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+          <p>Accepted payment methods</p>
+          <div class="payment grid">
+            <img src="https://img.icons8.com/color/48/000000/visa.png" />
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+            <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+            <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+          </div>
+        </div>
+  
+        <div class="box">
+          <h3>Recent News</h3>
+  
+          <ul>
+            <li>Our Secret Island Boat Tour Is Just for You</li>
+            <li>Chill and Escape in Our Natural Shelters</li>
+            <li>September in Luviana Hotel</li>
+            <li>Live Music Concerts at Luviana</li>
+          </ul>
+        </div>
+  
+        <div class="box">
+          <h3>For Customers</h3>
+          <ul>
+            <li>About Luviana</li>
+            <li>Customer Care & Help 24/7</li>
+            <li>Corporate Accounts</li>
+            <li>Financial Information</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+  
+        <div class="box">
+          <h3>Contact Us</h3>
+  
+          <ul>
+            <li>3015 Grand Ave, Cocount Grove, Merrick Way FL 123456</li>
+            <li><i class="fas fa-envelope"></i>hotels@gmail.com </li>
+            <li><i class="fas fa-phone-alt"></i>123 456 7898 </li>
+            <li><i class="fas fa-phone-alt"></i>+91 98885 25552 </li>
+            <li><i class="fas fa-comments"></i>24/ 7 Customer Services </li>
+            <hr>
+          </ul>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

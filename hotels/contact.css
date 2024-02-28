@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo img{
+    width: 150px;
+    height: 120px;
+}
+span{
+
+    cursor: pointer;
+    color: rgb(169, 5, 5);
+    padding: 20px;
+    font-size: 50px;
+} 
+
+
+.sidenav {
+    width: 0;
+    position: fixed;
+    top: 60px;
+    height: 300px;
+    right: 0;
+    background-color: #f0e5e5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+   
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #070707;
+    display: block;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .middle h1{
+    font-size: 40px;
+  }
+.header h1{
+    margin-top: 130px;
+    color:#C71585;
+    text-align: center;
+}
+.form{
+    margin-top: 140px;
+    background: url(cont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.form1 h2{
+    font-size: 40px;
+    margin-left: 20px;
+    color: #78084f;
+}
+.form1 input{
+    margin-top: 30px;
+    border-radius: 50px;
+    width: 600px;
+    height: 30px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.addr{
+    margin-left: 20px;
+    border-radius: 50px;
+    width: 600px;
+    padding: 10px;
+    height: 50px;
+}
+.addr textarea{
+    width: 580px;
+    padding: 10px;
+    height: 80px;
+    border-radius: 20px;
+}
+.btn input{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    background-color:#550839;
+    color: aliceblue;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+span{
+
+    cursor: pointer;
+    color: rgb(169, 5, 5);
+    padding: 20px;
+    font-size: 50px;
+} 
+  .middle h1{
+    font-size: 40px;
+  }
+.form2{
+   background: url(bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-size: 1000px 700px;
+   padding-left: 40px;
+   margin-left: 350px;
+}
+.form2 h1{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.form2 h3{
+    color: aliceblue;
+    padding-top: 60px;
+    font-size: 25px;
+}
+.fa{
+    display: flex;
+    color: aliceblue;
+    margin-top: 30px;
+    gap: 20px;
+}
+.fa p{
+    width: 400px;
+    font-size: 10px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+.fa{
+    display: flex;
+    color: aliceblue;
+    margin-top: 30px;
+}
+.fa p{
+    width: 400px;
+    font-size: 10px;
+    line-height: 20px;
+}
+.fa i{
+    margin-top: 20px;
+}
+footer{
+    padding: 10px;
+    background-color: white;
+}
+img{
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+#office h3{
+   font-size: 25px;
+   padding: 10px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+button{
+    background-color:red;
+    padding: 10px;
+    border: none;
+    margin: 20px;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: #bfb5b5;
+   
+}
+ footer a {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+p{
+    text-align: center;
+
+}
+#find{
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.find a{
+    margin: 10px;
+}
+.find a img{
+    width: 40px;
+}
+.location a{
+    padding-bottom: 30px;
+}
+.con1{
+    color: aliceblue;
+}
+.icon p{
+    padding-top: 33px;
+    font-size: 15px;
+}
+.icon{
+    gap: 20px;
+}
+
+
+/* media quries in mobile view*/
+
+
+
+/* Example Media Queries for Mobile View */
+/* Add these styles to your existing contact.css or create a new CSS file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.form1,
+.form2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form1 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.form2 {
+    flex: 1;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn input[type="button"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+.addr p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.fa {
+    display: flex;
+    align-items: center;
+}
+
+.fa i,
+.fa img {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
